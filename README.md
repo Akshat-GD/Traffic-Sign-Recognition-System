@@ -41,7 +41,7 @@ This project employs a structured deep-learning pipeline that includes the chose
     
 *System Libraries*<br>
 
-| Libraries                 | Purpose                                                 |
+| Library                   | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
 | os                        | File system operations and directory management         |
 | shutil                    | File and directory                                      |
