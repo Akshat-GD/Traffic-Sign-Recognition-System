@@ -140,7 +140,7 @@ These results indicate that the network generalizes well to unseen traffic sign 
 
 ## **5. Folder Structure**
 
-'''
+```
 Traffic_Sign_Recognition/
 |
 |── traffic_sign_recognition.ipynb # Main google colab notebook
@@ -148,7 +148,7 @@ Traffic_Sign_Recognition/
 |── README.md                      # Project overview and documentation
 |
 |── requirements.txt               # Python dependencies
-'''
+```
 
 ## **6. Future Improvements**
 
