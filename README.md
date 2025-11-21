@@ -60,13 +60,13 @@ Original images span a wide resolution, from approximately 35x35 px to 100x100 p
 We take each image (from their respective folders), resize it to 30x30 px (as this was found to be the most observed resolution), convert it into array and append it to a single list which is then later converted to an array. This is then split into training and testing sets.
 
 Raw Images(variable resolution)<br>
-            |
+            |<br>
   Resize to 30x30 px<br>
-            |
+            |<br>
   Convert to Arrays<br>
-            |
+            |<br>
   Train-Test Split(80:20)
-            |
+            |<br>
       Feed to Model
 
 **3.4. Model Architecture**
