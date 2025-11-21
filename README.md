@@ -74,14 +74,12 @@ The network follows a sequential CNN design with stacked convolutional blocks, p
 | 6                 | Conv2D                | 64 filters, 3x3 kernel, ReLU  |
 | 7                 | MaxPool2D             | 2x2 pool size                 |
 | 8                 | Dropout               | rate = 0.25                   | 
------------------------------------------------------------------------------
 |                                  Flatten                                  |
------------------------------------------------------------------------------
 | 9                 | Dense                 | 256 units, ReLU               |
 | 10                | Dropout               | rate = 0.5                    |
 | 11                | Dense                 | 43 units, softmax             |
 
-Design choices explained:
+Design choices explained:<br>
 **Convolutional Layers**:<br>
 Captures hierarchical spatial features such as edges, shapes and color patterns essential for identifying traffic signs
 
