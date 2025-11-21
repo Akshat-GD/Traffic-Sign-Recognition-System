@@ -40,6 +40,7 @@ Visualization Libraries<br>
 System Libraries<br>
 
 | Libraries                 | Purpose                                                 |
+|---------------------------|---------------------------------------------------------|
 | os                        | File system operations and directory management         |
 | shutil                    | File and directory                                      |
 
@@ -58,26 +59,27 @@ Original images span a wide resolution, from approximately 35x35 px to 100x100 p
 **3.3. Data Preprocessing**
 We take each image (from their respective folders), resize it to 30x30 px (as this was found to be the most observed resolution), convert it into array and append it to a single list which is then later converted to an array. This is then split into training and testing sets.
 
-    Raw Images(variable resolution) --> Resize to 30x30 px --> Convert to Arrays --> Train-Test Split(80:20) --> Feed to Model
+Raw Images(variable resolution) --> Resize to 30x30 px --> Convert to Arrays --> Train-Test Split(80:20) --> Feed to Model
 
 **3.4. Model Architecture**
 The network follows a sequential CNN design with stacked convolutional blocks, pooling layers and fully connected layers for final classification. The architecture is structured as follows:<br>
 
-    |       Layer       |          Type         |         Configuration         |
-    | 1                 | Conv2D                | 32 filters, 5x5 kernel, ReLU  |
-    | 2                 | Conv2D                | 32 filters, 5x5 kernel, ReLU  |
-    | 3                 | MaxPool2D             | 2x2 pool size                 |
-    | 4                 | Dropout               | rate = 0.25                   |
-    | 5                 | Conv2D                | 64 filters, 3x3 kernel, ReLU  |
-    | 6                 | Conv2D                | 64 filters, 3x3 kernel, ReLU  |
-    | 7                 | MaxPool2D             | 2x2 pool size                 |
-    | 8                 | Dropout               | rate = 0.25                   | 
-    -----------------------------------------------------------------------------
-    |                                  Flatten                                  |
-    -----------------------------------------------------------------------------
-    | 9                 | Dense                 | 256 units, ReLU               |
-    | 10                | Dropout               | rate = 0.5                    |
-    | 11                | Dense                 | 43 units, softmax             |
+|       Layer       |          Type         |         Configuration         |
+|-------------------|-----------------------|-------------------------------|
+| 1                 | Conv2D                | 32 filters, 5x5 kernel, ReLU  |
+| 2                 | Conv2D                | 32 filters, 5x5 kernel, ReLU  |
+| 3                 | MaxPool2D             | 2x2 pool size                 |
+| 4                 | Dropout               | rate = 0.25                   |
+| 5                 | Conv2D                | 64 filters, 3x3 kernel, ReLU  |
+| 6                 | Conv2D                | 64 filters, 3x3 kernel, ReLU  |
+| 7                 | MaxPool2D             | 2x2 pool size                 |
+| 8                 | Dropout               | rate = 0.25                   | 
+-----------------------------------------------------------------------------
+|                                  Flatten                                  |
+-----------------------------------------------------------------------------
+| 9                 | Dense                 | 256 units, ReLU               |
+| 10                | Dropout               | rate = 0.5                    |
+| 11                | Dense                 | 43 units, softmax             |
 
 Design choices explained:
 **Convolutional Layers**:<br>
