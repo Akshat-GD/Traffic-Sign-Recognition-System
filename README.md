@@ -19,7 +19,7 @@ This project employs a structured deep-learning pipeline that includes the chose
 
 **3.1. Tech stack employed:**
 
-**Core Libraries**<br>
+*Core Libraries*<br>
 | Library                   | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
 | Keras                     | Deep learning framework for model building and training |
@@ -30,30 +30,30 @@ This project employs a structured deep-learning pipeline that includes the chose
 | OpenCV (cv2)              | Image processing and resizing                           |
 | PIL (Pillow)              | Image file handling and manipulation                    |
 
-**Visualization Libraries**<br>
+*Visualization Libraries*<br>
 
 | Library                   | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
 | Matplotlib                | Plotting training curves and visualization              |
 | Seaborn                   | Statistical visualization (KDE plots, histogram)        |
     
-**System Libraries**<br>
+*System Libraries*<br>
 
 | Libraries                 | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
 | os                        | File system operations and directory management         |
 | shutil                    | File and directory                                      |
 
-**Development Enviornmet**<br>
+*Development Enviornmet*<br>
 
 - Google colab
 
 **3.2. Exploratory Data Analysis Report**<br>
 The GTSRB dataset presents a diverse and challenging real-world benchmark, closely reflecting practical conditions encountered by traffic sign recognition systems. key insights from the EDA include:<br>
-- **Class Distribution**:<br>
+- *Class Distribution*:<br>
 Histogram analyses shows significant variation in the number of samples across different traffic sign categories, highlighting an imbalanced class structure.<br>
 
-- **Image Resolution Variability**:<br>
+- *Image Resolution Variability*:<br>
 Original images span a wide resolution, from approximately 35x35 px to 100x100 px, introducing natural diversity and contributing to the dataset's realism.<br>
 
 **3.3. Data Preprocessing**<br>
@@ -79,22 +79,22 @@ The network follows a sequential CNN design with stacked convolutional blocks, p
 | 10                | Dropout               | rate = 0.5                    |
 | 11                | Dense                 | 43 units, softmax             |
 
-Design choices explained:<br>
-**Convolutional Layers**:<br>
+**Design choices explained**:<br>
+*Convolutional Layers*:<br>
 Captures hierarchical spatial features such as edges, shapes and color patterns essential for identifying traffic signs
 
-**Max Pooling**:<br>
+*Max Pooling*:<br>
 reduces spatial dimensions while retaining the most informative features, improving both efficiency and generalization.
 
-**Dropout Regularization**:<br>
+*Dropout Regularization*:<br>
 Mitigates overfitting by randomly deactivating neurons during training.
 - 0.25 rate in early layers: Preserves low-level features richness while still providing regularization.
 - 0.5 rate in dense layers: Offers stronger regularization where overfitting is more likely.
 
-**Softmax Activation**:<br>
+*Softmax Activation*:<br>
 Produces a probability distribution over all 43 classes for final classification.
 
-**Sequential Architecture**:<br>
+*Sequential Architecture*:<br>
 Allows progressive feature extraction, from basic edges to complex sign patterns mirroring aspects of human visual processing.
 
 **3.5. Training Procedure**
@@ -108,7 +108,7 @@ The model was trained using the following configurations:<br>
 | Loss function     | Categorical Crossentropy           |
 | Early Stopping    | (patience = 8, min_delta = 0.02)   |
 
-Training insights
+*Training insights*
 
 - Training automatically halts at epoch 13.
 
@@ -116,13 +116,13 @@ Training insights
 
 The model's performance is assessed using key evaluation metrics and visual analyses to ensure reliability and generalization.
 
-- **Accuracy Score**:<br>
+- *Accuracy Score*:<br>
     Measures the overall correctness of predictions across all classes.
 
-- **Training Vs Validation Accuracy plot**:<br>
+- *Training Vs Validation Accuracy plot*:<br>
     Visualizes learning behavior across epochs, helping identify convergence patterns, underfitting, or overfitting trends.
 
-- **Confusion Matrix**:<br>
+- *Confusion Matrix*:<br>
     Provides a detailed breakdown of correct and incorrect predictions across all 43 classes, highlighting class-wise performance and potential misclassification patterns.
 
 ## **4. Results**    
@@ -145,25 +145,25 @@ Traffic_Sign_Recognition/
 
 ## **6. Future Improvements**
 
-**Data Augmentation**:<br>
+*Data Augmentation*:<br>
 Implement rotation, brightmess adjustment, and perspective tranforms to improve robustness.
 
-**Normalization**:<br>
+*Normalization*:<br>
 Apply pixel normalization (0-1 or -1 to 1 range) for improved training stability.
 
-**Model Optimization**:
+*Model Optimization*:
 Experiment with modern achitectures (ResNet, MobileNet) for comparison.
 
-**Real-time Deployment**:
+*Real-time Deployment*:
 Convert to ONNX or TensorFlow Lite for edge device deployment
 
-**Class Imbalance Handling**:
+*Class Imbalance Handling*:
 Apply weighted loss function or SMOTE for underrepresented classes
 
-**Explainability**:
+*Explainability*:
 Implement Grad-CAM visualization to understand model predictions.
 
-**Extended Dataset**:
+*Extended Dataset*:
 Train on additional traffic sign datasets from different regions.
 
 ## **Author**<br>
