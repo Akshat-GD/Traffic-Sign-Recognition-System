@@ -36,8 +36,8 @@ This project employs a structured deep-learning pipeline that includes the chose
 
 | Library                   | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
-| Matplotlib                | Plotting training curves and visualization              |
-| Seaborn                   | Statistical visualization (KDE plots, histogram)        |
+| matplotlib                | Plotting training curves and visualization              |
+| seaborn                   | Statistical visualization (KDE plots, histogram)        |
     
 *System Libraries*<br>
 
