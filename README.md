@@ -19,7 +19,7 @@ This project employs a structured deep-learning pipeline that includes the chose
 
 **3.1. Tech stack employed:**
 
-Core Libraries<br>
+**Core Libraries**<br>
 | Library                   | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
 | Keras                     | Deep learning framework for model building and training |
@@ -30,21 +30,21 @@ Core Libraries<br>
 | OpenCV (cv2)              | Image processing and resizing                           |
 | PIL (Pillow)              | Image file handling and manipulation                    |
 
-Visualization Libraries<br>
+**Visualization Libraries**<br>
 
 | Library                   | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
 | Matplotlib                | Plotting training curves and visualization              |
 | Seaborn                   | Statistical visualization (KDE plots, histogram)        |
     
-System Libraries<br>
+**System Libraries**<br>
 
 | Libraries                 | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
 | os                        | File system operations and directory management         |
 | shutil                    | File and directory                                      |
 
-Development Enviornmet<br>
+**Development Enviornmet**<br>
 
 - Google colab
 
@@ -56,10 +56,18 @@ Histogram analyses shows significant variation in the number of samples across d
 - **Image Resolution Variability**:<br>
 Original images span a wide resolution, from approximately 35x35 px to 100x100 px, introducing natural diversity and contributing to the dataset's realism.<br>
 
-**3.3. Data Preprocessing**
+**3.3. Data Preprocessing**<br>
 We take each image (from their respective folders), resize it to 30x30 px (as this was found to be the most observed resolution), convert it into array and append it to a single list which is then later converted to an array. This is then split into training and testing sets.
 
-Raw Images(variable resolution) --> Resize to 30x30 px --> Convert to Arrays --> Train-Test Split(80:20) --> Feed to Model
+Raw Images(variable resolution)<br>
+            |
+  Resize to 30x30 px<br>
+            |
+  Convert to Arrays<br>
+            |
+  Train-Test Split(80:20)
+            |
+      Feed to Model
 
 **3.4. Model Architecture**
 The network follows a sequential CNN design with stacked convolutional blocks, pooling layers and fully connected layers for final classification. The architecture is structured as follows:<br>
