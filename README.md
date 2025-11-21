@@ -83,6 +83,7 @@ The network follows a sequential CNN design with stacked convolutional blocks, p
 | 11                | Dense                 | 43 units, softmax             |
 
 **Design choices explained**:<br>
+
 *Convolutional Layers*:<br>
 Captures hierarchical spatial features such as edges, shapes and color patterns essential for identifying traffic signs
 
