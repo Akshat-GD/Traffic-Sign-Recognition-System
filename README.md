@@ -159,24 +159,25 @@ Implement rotation, brightmess adjustment, and perspective tranforms to improve 
 *Normalization*:<br>
 Apply pixel normalization (0-1 or -1 to 1 range) for improved training stability.
 
-*Model Optimization*:
+*Model Optimization*:<br>
 Experiment with modern achitectures (ResNet, MobileNet) for comparison.
 
-*Real-time Deployment*:
+*Real-time Deployment*:<br>
 Convert to ONNX or TensorFlow Lite for edge device deployment
 
-*Class Imbalance Handling*:
+*Class Imbalance Handling*:<br>
 Apply weighted loss function or SMOTE for underrepresented classes
 
-*Explainability*:
+*Explainability*:<br>
 Implement Grad-CAM visualization to understand model predictions.
 
-*Extended Dataset*:
+*Extended Dataset*:<br>
 Train on additional traffic sign datasets from different regions.
 
 ## **Author**<br>
-Akshat Girish Dandur<br>
+**Akshat Girish Dandur**<br>
 B-Tech in AI&ML @ M. S. Ramaiah University Of Applied Sciences<br>
+
 I am an aspiring Machine Learning Engineer currently pursuing my B.Tech in Artificial Intelligence and Machine Learning, and I’m in my third year of study. I’m passionate about building practical AI solutions, continuously improving my skills, and exploring real-world applications of machine learning. I’m actively looking to collaborate on meaningful projects and open to internship opportunities where I can contribute, learn, and grow alongside experienced professionals.<br>
 - GitHub: https://github.com/Akshat-GD
 - LinkedIn: https://www.linkedin.com/in/akshat-dandur-a3817932a/
