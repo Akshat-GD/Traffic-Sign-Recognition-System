@@ -74,7 +74,7 @@ The network follows a sequential CNN design with stacked convolutional blocks, p
 | 6                 | Conv2D                | 64 filters, 3x3 kernel, ReLU  |
 | 7                 | MaxPool2D             | 2x2 pool size                 |
 | 8                 | Dropout               | rate = 0.25                   | 
-|                                  Flatten                                  |
+|==================================Flatten==================================|
 | 9                 | Dense                 | 256 units, ReLU               |
 | 10                | Dropout               | rate = 0.5                    |
 | 11                | Dense                 | 43 units, softmax             |
@@ -100,12 +100,13 @@ Allows progressive feature extraction, from basic edges to complex sign patterns
 **3.5. Training Procedure**
 The model was trained using the following configurations:<br>
 
-    | Parameter         | Configuration                      |
-    | Batch size        | 32                                 | 
-    | Epochs            | 30                                 | 
-    | Optimizer         | Adam                               | 
-    | Loss function     | Categorical Crossentropy           |
-    | Early Stopping    | (patience = 8, min_delta = 0.02)   |
+| Parameter         | Configuration                      |
+|-------------------|------------------------------------|
+| Batch size        | 32                                 | 
+| Epochs            | 30                                 | 
+| Optimizer         | Adam                               | 
+| Loss function     | Categorical Crossentropy           |
+| Early Stopping    | (patience = 8, min_delta = 0.02)   |
 
 Training insights
 
