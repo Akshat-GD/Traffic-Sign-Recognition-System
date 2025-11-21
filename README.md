@@ -18,7 +18,7 @@ The dataset has the following properties:
 This project employs a structured deep-learning pipeline that includes the chosen tech stack, a comprehensive EDA to understand dataset characteristics, systematic data preprocessing, a well-designed CNN architecture, a clearly defined training procedure, and regorous evaluation metrics to assess model preformance and generalization.<br>
 
 **3.1. Tech stack employed:**
-
+---
 *Core Libraries*<br>
 | Library                   | Purpose                                                 |
 |---------------------------|---------------------------------------------------------|
@@ -49,6 +49,7 @@ This project employs a structured deep-learning pipeline that includes the chose
 - Google colab
 
 **3.2. Exploratory Data Analysis Report**<br>
+---
 The GTSRB dataset presents a diverse and challenging real-world benchmark, closely reflecting practical conditions encountered by traffic sign recognition systems. key insights from the EDA include:<br>
 - *Class Distribution*:<br>
 Histogram analyses shows significant variation in the number of samples across different traffic sign categories, highlighting an imbalanced class structure.<br>
@@ -57,11 +58,13 @@ Histogram analyses shows significant variation in the number of samples across d
 Original images span a wide resolution, from approximately 35x35 px to 100x100 px, introducing natural diversity and contributing to the dataset's realism.<br>
 
 **3.3. Data Preprocessing**<br>
+---
 We take each image (from their respective folders), resize it to 30x30 px (as this was found to be the most observed resolution), convert it into array and append it to a single list which is then later converted to an array. This is then split into training and testing sets.
 
 Raw Images(variable resolution) -> Resize to 30x30 px -> Convert to Arrays -> Train-Test Split(80:20) -> Feed to Model
 
 **3.4. Model Architecture**<br>
+---
 The network follows a sequential CNN design with stacked convolutional blocks, pooling layers and fully connected layers for final classification. The architecture is structured as follows:<br>
 
 |       Layer       |          Type         |         Configuration         |
@@ -98,6 +101,7 @@ Produces a probability distribution over all 43 classes for final classification
 Allows progressive feature extraction, from basic edges to complex sign patterns mirroring aspects of human visual processing.
 
 **3.5. Training Procedure**
+---
 The model was trained using the following configurations:<br>
 
 | Parameter         | Configuration                      |
@@ -113,6 +117,7 @@ The model was trained using the following configurations:<br>
 - Training automatically halts at epoch 13.
 
 **3.6. Model Evaluation Metrics**
+---
 
 The model's performance is assessed using key evaluation metrics and visual analyses to ensure reliability and generalization.
 
