@@ -74,7 +74,7 @@ The network follows a sequential CNN design with stacked convolutional blocks, p
 | 6                 | Conv2D                | 64 filters, 3x3 kernel, ReLU  |
 | 7                 | MaxPool2D             | 2x2 pool size                 |
 | 8                 | Dropout               | rate = 0.25                   | 
-|==================================Flatten==================================|
+|Flattening layer   | -                     | -                             |
 | 9                 | Dense                 | 256 units, ReLU               |
 | 10                | Dropout               | rate = 0.5                    |
 | 11                | Dense                 | 43 units, softmax             |
