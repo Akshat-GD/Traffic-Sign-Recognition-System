@@ -59,17 +59,9 @@ Original images span a wide resolution, from approximately 35x35 px to 100x100 p
 **3.3. Data Preprocessing**<br>
 We take each image (from their respective folders), resize it to 30x30 px (as this was found to be the most observed resolution), convert it into array and append it to a single list which is then later converted to an array. This is then split into training and testing sets.
 
-Raw Images(variable resolution)<br>
-            |<br>
-  Resize to 30x30 px<br>
-            |<br>
-  Convert to Arrays<br>
-            |<br>
-  Train-Test Split(80:20)
-            |<br>
-      Feed to Model
+Raw Images(variable resolution) -> Resize to 30x30 px -> Convert to Arrays -> Train-Test Split(80:20) -> Feed to Model
 
-**3.4. Model Architecture**
+**3.4. Model Architecture**<br>
 The network follows a sequential CNN design with stacked convolutional blocks, pooling layers and fully connected layers for final classification. The architecture is structured as follows:<br>
 
 |       Layer       |          Type         |         Configuration         |
