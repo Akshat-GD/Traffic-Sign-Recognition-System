@@ -32,9 +32,10 @@ Core Libraries<br>
 
 Visualization Libraries<br>
 
-    | Library                   | Purpose                                                 |
-    | Matplotlib                | Plotting training curves and visualization              |
-    | Seaborn                   | Statistical visualization (KDE plots, histogram)        |
+| Library                   | Purpose                                                 |
+|---------------------------|---------------------------------------------------------|
+| Matplotlib                | Plotting training curves and visualization              |
+| Seaborn                   | Statistical visualization (KDE plots, histogram)        |
     
 System Libraries<br>
 
