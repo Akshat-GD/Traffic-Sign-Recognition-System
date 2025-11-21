@@ -2,8 +2,10 @@
 
 ## 1. Project Overview
 
-Accurate traffic sign recognition is critical for safe autonomous vehicle operation. Real-world studies demonstrate that robust traffic sign detection systems directly improve autonomous driving safety by ensuring vehicles reliably obey road regulations. CNN-based sign recognition has proven particularly valuable in reducing accidents caused by missed or misinterpreted signage—a frequent failure mode in early autonomous systems.<br> 
+Accurate traffic sign recognition is critical for safe autonomous vehicle operation. Real-world studies demonstrate that robust traffic sign detection systems directly improve autonomous driving safety by ensuring vehicles reliably obey road regulations. CNN-based sign recognition has proven particularly valuable in reducing accidents caused by missed or misinterpreted signage—a frequent failure mode in early autonomous systems.<br>
+
 This project implements a CNN-based traffic sign classifier. The network processes labeled traffic sign images and outputs a predicted class for each input.<br>
+
 To improve the model’s performance and reliability, **Dropout Regularization** and the **EarlyStopping** callback were incorporated. Together, these techniques help build a robust and generalizable traffic sign classifier that learns meaningful patterns without overfitting. CNN-based TSR models typically achieve near human-level accuracy on benchmark datasets, making them dependable components in autonomous vehicle perception systems and contributing to safer on-road decision-making.
 
 ## 2. Dataset Information
