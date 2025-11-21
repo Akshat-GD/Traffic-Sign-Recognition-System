@@ -39,15 +39,15 @@ Visualization Libraries<br>
     
 System Libraries<br>
 
-    | Libraries                 | Purpose                                                 |
-    | os                        | File system operations and directory management         |
-    | shutil                    | File and directory                                      |
+| Libraries                 | Purpose                                                 |
+| os                        | File system operations and directory management         |
+| shutil                    | File and directory                                      |
 
 Development Enviornmet<br>
 
 - Google colab
 
-**3.2. Exploratory Data Analysis Report**
+**3.2. Exploratory Data Analysis Report**<br>
 The GTSRB dataset presents a diverse and challenging real-world benchmark, closely reflecting practical conditions encountered by traffic sign recognition systems. key insights from the EDA include:<br>
 - **Class Distribution**:<br>
 Histogram analyses shows significant variation in the number of samples across different traffic sign categories, highlighting an imbalanced class structure.<br>
