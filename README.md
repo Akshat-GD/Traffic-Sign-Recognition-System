@@ -21,6 +21,7 @@ This project employs a structured deep-learning pipeline that includes the chose
 
 Core Libraries<br>
 | Library                   | Purpose                                                 |
+|---------------------------|---------------------------------------------------------|
 | Keras                     | Deep learning framework for model building and training |
 | Numpy                     | Numerical computing and array operation                 |
 | Pandas                    | Data loading, exploration, and manipulation             |
